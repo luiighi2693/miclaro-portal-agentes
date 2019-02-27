@@ -1,0 +1,176 @@
+<!-- [INIT MENU MOVIL] -->
+<div id="mySidenav" class="sidenav" [ngStyle]="{'right': !mobileIsOpen ? '100%' : '0'}">
+  <a href="#" class="m-menubar vcenter">
+				<span class="tabcell">
+					Activaci&oacute;n
+
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+  </a>
+
+  <a href="#" class="m-menubar vcenter">
+				<span class="tabcell">
+					Activaci&oacute;n Express
+
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+  </a>
+
+  <a href="#" class="m-menubar vcenter">
+				<span class="tabcell">
+					Cambio de Plan
+
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+  </a>
+
+  <a href="#" class="m-menubar vcenter">
+				<span class="tabcell">
+					Canal de Agentes
+
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+  </a>
+
+  <div class="basicrow visible-xs">
+    <a (click)="logout()" class="m-menubar close-s vcenter">
+					<span class="tabcell">
+						Cerrar Sesi&oacute;n
+
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
+					</span>
+    </a>
+  </div>
+</div>
+<!-- [END MENU MOVIL] -->
+
+<div class="basicrow">
+  <div class="htopbar">
+    <div class="container vcenter">
+      <div class="tabcell">
+        <div class="autorow pull-left" [ngClass]="{'w-bar': validateSession()}">
+          <div class="autorow pull-left d-twlv arrw" *ngIf="!validateSession()">
+            <select>
+              <option>
+                Portal Agentes
+              </option>
+            </select>
+          </div>
+
+          <div class="autorow pull-left h-twlv" *ngIf="!validateSession()">
+            <a href="#">Personas</a>
+            <a class="on m-sides" href="#">Portal Agentes</a>
+          </div>
+          <div class="autorow pull-left" *ngIf="validateSession()">
+            <a class="on" href="#">Portal Agentes</a>
+          </div>
+        </div>
+
+        <div class="autorow ml-htop pull-left" *ngIf="validateSession()">
+          <a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;{{ authenticationService.getCredentials().username }}</a>
+        </div>
+
+        <div class="autorow ml-htop pull-left h-twlv" *ngIf="validateSession()">
+          <a (click)="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;Cerrar Sesi&oacute;n</a>
+        </div>
+
+        <div class="autorow pull-right">
+          <div class="autorow pull-left">
+            <img class="bandera" width="100%" src="../../../../assets/images/bandera.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menubar">
+    <div class="container" *ngIf="!validateSession()">
+      <div class="basicrow text-center">
+        <div class="mc-logo centr">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											<img width="100%" src="../../../../assets/images/claro-logo.png">
+										</span>
+									</span>
+        </div>
+      </div>
+    </div>
+    <div class="container rel" *ngIf="validateSession()">
+      <div class="autorow pull-left">
+        <a href="#" class="mc-logo">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											<img width="100%" src="../../../../assets/images/claro-logo.png">
+										</span>
+									</span>
+        </a>
+      </div>
+
+      <div class="autorow pull-left hidden-xs hidden-sm">
+        <a href="#" class="menu-ls mexpand on">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											Activaci&oacute;n
+										</span>
+									</span>
+        </a>
+
+        <a href="#" class="menu-ls mexpand">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											Activaci&oacute;n Express
+										</span>
+									</span>
+        </a>
+
+        <a href="#" class="menu-ls mexpand">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											Cambio de Plan
+										</span>
+									</span>
+        </a>
+
+        <a href="#" class="menu-ls mexpand">
+									<span class="autocont vcenter">
+										<span class="tabcell">
+											Canal de Agentes
+										</span>
+									</span>
+        </a>
+      </div>
+
+      <div class="autorow pull-right visible-xs visible-sm">
+        <div class="mnu-icon" [ngClass]="{'m-open': mobileIsOpen}">
+          <div class="autocont vcenter">
+            <div class="tabcell">
+              <i (click)="mobileIsOpen = true" class="fa fa-bars"></i>
+
+              <i (click)="mobileIsOpen = false" class="fa fa-times"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagosyfacturas" class="collapse claro-sublinks" *ngIf="validateSession()">
+      <div class="subconts">
+        <div class="basicrow roboto-m f-black f-bmed">
+          <a href="#">Historial de Pagos</a>
+        </div>
+
+        <div class="basicrow roboto-r f-black f-med">
+          <img class="submenu-icon" width="100%" src="../../../../assets/images/menu-icon-i.png">
+
+          <a href="#" class="autorow m-top-ii pull-left m-right-i">Descarga Tu Factura</a>
+        </div>
+      </div>
+
+      <div class="bluemenumsg roboto-r vcenter">
+        <div class="tabcell">
+          La red donde todo es posible
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

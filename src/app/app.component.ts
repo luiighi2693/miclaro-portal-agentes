@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-// import { TranslateService } from '@ngx-translate/core';
-import { merge } from 'rxjs';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 
 import { environment } from '@env/environment';
 import { Logger } from '@app/core';
@@ -19,10 +17,10 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private titleService: Title,
-    // private translateService: TranslateService,
-    // private i18nService: I18nService
-  ) {}
+    private titleService: Title
+  ) // private translateService: TranslateService,
+  // private i18nService: I18nService
+  {}
 
   ngOnInit() {
     // Setup logger

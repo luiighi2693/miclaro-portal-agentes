@@ -6,7 +6,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./clasification-credit.component.scss']
 })
 export class ClasificationCreditComponent implements OnInit {
-  constructor(private route: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+  goTo(ruta: String) {
+    console.log(ruta);
+    this.router.navigate(['/' + ruta], { replaceUrl: true });
+  }
 }

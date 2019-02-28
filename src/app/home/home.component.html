@@ -1,7 +1,7 @@
 <div class="basicrow">
   <app-header></app-header>
 
-  <div class="basicrow mbott">
+  <div class="basicrow mbott" style="min-height: 450px;">
     <div class="container">
       <div class="basicrow f-black f-reg roboto-r">
         <div class="row">
@@ -9,30 +9,20 @@
             <div class="autowcont i-agentcont m-top-i">
               <div class="basicrow msidespad">
                 <div class="b-title">
-                  <div class="autocont roboto-m f-bmed pull-left vcenter">
-                    <div class="tabcell">
-                      Localidad
-                    </div>
-                  </div>
+                  <div class="autocont roboto-m f-bmed pull-left vcenter"><div class="tabcell">Localidad</div></div>
                 </div>
               </div>
 
-              <div class="basicrow msidespad">
-                Escoja localizaci&oacute;n de la tienda donde va a operar.
-              </div>
+              <div class="basicrow msidespad">Escoja localizaci&oacute;n de la tienda donde va a operar.</div>
 
               <div class="basicrow bg-gray-i">
                 <div class="dealer-ag-i text-center">
-                  <span class="roboto-b">C&oacute;digo de Dealer</span><br/>
-                  <span class="f-semi roboto-m f-green">
-													02000
-												</span>
+                  <span class="roboto-b">C&oacute;digo de Dealer</span><br />
+                  <span class="f-semi roboto-m f-green"> 02000 </span>
                 </div>
 
                 <div class="dealer-ag-ii">
-                  <label class="label-f">
-                    Localidad
-                  </label>
+                  <label class="label-f"> Localidad </label>
 
                   <select class="sel-f">
                     <option>X100</option>
@@ -47,17 +37,13 @@
               <div class="basicrow msidespad">
                 <div class="b-title">
                   <div class="autocont roboto-m f-bmed pull-left vcenter">
-                    <div class="tabcell">
-                      Tipo de Cuenta
-                    </div>
+                    <div class="tabcell">Tipo de Cuenta</div>
                   </div>
                 </div>
               </div>
 
               <div class="basicrow msidespad">
-                <div class="basicrow">
-                  Tipo de cuenta de servicio Prepago, Postpago que desea crear.
-                </div>
+                <div class="basicrow">Tipo de cuenta de servicio Prepago, Postpago que desea crear.</div>
 
                 <div class="basicrow m-top-ii m-bott">
                   <select class="sel-f">
@@ -73,9 +59,7 @@
               <div class="basicrow msidespad">
                 <div class="b-title">
                   <div class="autocont roboto-m f-bmed pull-left vcenter">
-                    <div class="tabcell">
-                      Verificaci&oacute;n de Identidad
-                    </div>
+                    <div class="tabcell">Verificaci&oacute;n de Identidad</div>
                   </div>
                 </div>
               </div>
@@ -83,24 +67,28 @@
               <div class="basicrow msidespad">
                 <div class="basicrow m-bott">
                   <div class="basicrow">
-                    <label class="label-f">
-                      &#42; Buscador
-                    </label>
+                    <label class="label-f"> &#42; Buscador </label>
 
                     <div class="basicrow rel">
-                      <img data-toggle="popover" data-html="true" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-placement="bottom" class="q-t" width="100%" src="../../assets/images/tooltip1.png">
+                      <img
+                        data-toggle="popover"
+                        data-html="true"
+                        data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        data-placement="bottom"
+                        class="q-t"
+                        width="100%"
+                        src="../../assets/images/tooltip1.png"
+                      />
 
-                      <input placeholder="Seguro Social / Numero de tel&eacute;fono /  BAN" class="inp-f qt">
+                      <input placeholder="Seguro Social / Numero de tel&eacute;fono /  BAN" class="inp-f qt" />
                     </div>
                   </div>
 
                   <div class="basicrow">
-                    <input placeholder="4 SSN" class="inp-f ag-ssn m-top-ii">
+                    <input placeholder="4 SSN" class="inp-f ag-ssn m-top-ii" />
 
-                    <a href="#" class="btns red def-ii pull-left vcenter m-top-ii">
-														<span class="tabcell">
-															Buscar <i class="fa fa-search"></i>
-														</span>
+                    <a (click)="goTo('new-client')" class="btns red def-ii pull-left vcenter m-top-ii">
+                      <span class="tabcell"> Buscar <i class="fa fa-search"></i> </span>
                     </a>
                   </div>
                 </div>
@@ -111,5 +99,5 @@
       </div>
     </div>
   </div>
-  <app-footer></app-footer>
+  <app-footer style="position: static;bottom: 0;"></app-footer>
 </div>

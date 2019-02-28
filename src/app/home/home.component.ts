@@ -14,9 +14,14 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.isLoading = true;
   }
+
+  goTo(ruta: String) {
+    console.log(ruta);
+    this.router.navigate(['/' + ruta], { replaceUrl: true });
+  }
+
   //
   // gotoUsfCase() {
   //   this.router.navigate(['/usf-case'], { replaceUrl: true });
   // }
-
 }

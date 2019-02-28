@@ -14,4 +14,8 @@ export class NewClientComponent implements OnInit {
   ngOnInit() {
     this.isLoading = true;
   }
+  goTo(ruta: String) {
+    console.log(ruta);
+    this.router.navigate(['/' + ruta], { replaceUrl: true });
+  }
 }

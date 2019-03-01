@@ -1,6 +1,6 @@
 <!-- [INIT MENU MOVIL] -->
 <div id="mySidenav" class="sidenav" [ngStyle]="{ right: !mobileIsOpen ? '100%' : '0' }">
-  <a href="#" class="m-menubar vcenter">
+  <a href="" class="m-menubar vcenter">
     <span class="tabcell">
       Activaci&oacute;n
 
@@ -8,7 +8,7 @@
     </span>
   </a>
 
-  <a href="#" class="m-menubar vcenter">
+  <a href="" class="m-menubar vcenter">
     <span class="tabcell">
       Activaci&oacute;n Express
 
@@ -16,7 +16,7 @@
     </span>
   </a>
 
-  <a href="#" class="m-menubar vcenter">
+  <a href="" class="m-menubar vcenter">
     <span class="tabcell">
       Cambio de Plan
 
@@ -24,7 +24,7 @@
     </span>
   </a>
 
-  <a href="#" class="m-menubar vcenter">
+  <a href="" class="m-menubar vcenter">
     <span class="tabcell">
       Canal de Agentes
 
@@ -56,7 +56,7 @@
           </div>
 
           <div class="autorow pull-left h-twlv" *ngIf="!validateSession()">
-            <a href="#">Personas</a> <a class="on m-sides" (click)="goToHome()">Portal Agentes</a>
+            <a href="">Personas</a> <a class="on m-sides" (click)="goToHome()">Portal Agentes</a>
           </div>
           <div class="autorow pull-left" *ngIf="validateSession()">
             <a class="on" (click)="goToHome()">Portal Agentes</a>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="autorow ml-htop pull-left" *ngIf="validateSession()">
-          <a href="#"
+          <a href=""
             ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;{{
               authenticationService.getCredentials().username
             }}</a
@@ -104,19 +104,19 @@
       </div>
 
       <div class="autorow pull-left hidden-xs hidden-sm">
-        <a href="#" class="menu-ls mexpand on">
+        <a href="" class="menu-ls mexpand on">
           <span class="autocont vcenter"> <span class="tabcell"> Activaci&oacute;n </span> </span>
         </a>
 
-        <a href="#" class="menu-ls mexpand">
+        <a href="" class="menu-ls mexpand">
           <span class="autocont vcenter"> <span class="tabcell"> Activaci&oacute;n Express </span> </span>
         </a>
 
-        <a href="#" class="menu-ls mexpand">
+        <a href="" class="menu-ls mexpand">
           <span class="autocont vcenter"> <span class="tabcell"> Cambio de Plan </span> </span>
         </a>
 
-        <a href="#" class="menu-ls mexpand">
+        <a href="" class="menu-ls mexpand">
           <span class="autocont vcenter"> <span class="tabcell"> Canal de Agentes </span> </span>
         </a>
       </div>
@@ -136,12 +136,12 @@
 
     <div id="pagosyfacturas" class="collapse claro-sublinks" *ngIf="validateSession()">
       <div class="subconts">
-        <div class="basicrow roboto-m f-black f-bmed"><a href="#">Historial de Pagos</a></div>
+        <div class="basicrow roboto-m f-black f-bmed"><a href="">Historial de Pagos</a></div>
 
         <div class="basicrow roboto-r f-black f-med">
           <img class="submenu-icon" width="100%" src="../../../../assets/images/menu-icon-i.png" />
 
-          <a href="#" class="autorow m-top-ii pull-left m-right-i">Descarga Tu Factura</a>
+          <a href="" class="autorow m-top-ii pull-left m-right-i">Descarga Tu Factura</a>
         </div>
       </div>
 

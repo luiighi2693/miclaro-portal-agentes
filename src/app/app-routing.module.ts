@@ -6,6 +6,7 @@ import { ClasificationCreditComponent } from './pages/clasification-credit/clasi
 import { EquipoPlanSvaComponent } from './pages/equipo-plan-sva/equipo-plan-sva.component';
 import { ConfirmationPayIncomeComponent } from './pages/confirmation-pay-income/confirmation-pay-income.component';
 import { OrderDetailComponent } from './pages/order-detail/order-detail.component';
+import { OrderConfirmationComponent } from './pages/order-confirmation/order-confirmation.component';
 const routes: Routes = [
   // Fallback when no prior route is matched
   { path: 'new-client', component: NewClientComponent, pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'equipo-plan-sva', component: EquipoPlanSvaComponent, pathMatch: 'full' },
   { path: 'confirmation-pay-income', component: ConfirmationPayIncomeComponent, pathMatch: 'full' },
   { path: 'order-detail', component: OrderDetailComponent, pathMatch: 'full' },
+  { path: 'order-confirmation', component: OrderConfirmationComponent, pathMatch: 'full' },
   { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 

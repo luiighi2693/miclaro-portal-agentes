@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<div class="basicrow mbott-i" style="min-height:420px;">
+  <div class="container">
+    <div class="basicrow m-top-i mbott">
+      <div class="difftabs">
+        <div class="difft-def def-a on">Cliente Nuevo</div>
+
+        <a href="#" class="difft-def auto-d-i">
+          <span class="roboto-b">Tipo de Subcuenta:</span> Individual / Update
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+        </a>
+
+        <a href="#" class="difft-def auto-d">
+          <span class="roboto-b">Tipo de BAN:</span> Individual <i class="fa fa-pencil" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="basicrow f-black f-reg roboto-r">
+      <div class="basicrow f-btitle">Confirmaci&oacute;n de Pago Income</div>
+
+      <div class="basicrow">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-top-i">
+            <label class="label-f"> &#42; N&uacute;mero de confirmaci&oacute;n </label>
+
+            <input class="inp-f" />
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-top-i">
+            <label class="label-f"> &#42; M&eacute;todo de Pago </label>
+
+            <input class="inp-f" />
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-top-i">
+            <label class="label-f"> &#42; Monto </label>
+
+            <input class="inp-f" />
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-top-i">
+            <label class="label-f"> &#42; Fecha </label>
+
+            <div class="basicrow rel">
+              <i class="fa fa-calendar calendarinp" aria-hidden="true"></i>
+
+              <input class="inp-f calndr-def" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="basicrow text-center m-top-i">
+        <a (click)="goTo('order-detail')" class="btns red def-i centr vcenter">
+          <span class="tabcell"> Continuar&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -8,17 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
   mobileIsOpen = false;
 
-  constructor(public authenticationService: AuthenticationService,
-              private router: Router) { }
+  constructor(public authenticationService: AuthenticationService, private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   validateSession() {
-    if (this.authenticationService !== undefined ) {
+    if (this.authenticationService !== undefined) {
       return this.authenticationService.getCredentials() !== null;
     } else {
       return false;

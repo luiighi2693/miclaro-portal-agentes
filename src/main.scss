@@ -15,3 +15,20 @@
 
 // Theme customization
 //@import "theme/theme";
+
+//correccion de posicion del footer absolute o relative?
+.footcont,
+.allfootcont {
+  height: auto;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.footcont {
+  min-height: 62px;
+}
+div.footcont > div.container.vcenter {
+  padding: 25px 10%;
+}

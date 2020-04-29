@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-new-client',
+  templateUrl: './new-client.component.html',
+  styleUrls: ['./new-client.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class NewClientComponent implements OnInit {
   isLoading: boolean;
 
   constructor(private router: Router) {}
@@ -14,14 +14,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.isLoading = true;
   }
-
   goTo(ruta: String) {
     console.log(ruta);
     this.router.navigate(['/' + ruta], { replaceUrl: true });
   }
-
-  //
-  // gotoUsfCase() {
-  //   this.router.navigate(['/usf-case'], { replaceUrl: true });
-  // }
 }

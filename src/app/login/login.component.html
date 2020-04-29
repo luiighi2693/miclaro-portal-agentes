@@ -1,22 +1,21 @@
 <div class="basicrow">
   <app-header></app-header>
 
-  <div class="basicrow m-top">
+  <div class="basicrow m-top" style="min-height: 75vh;">
     <div class="container">
-      <div class="basicrow f-title">
-        Portal Agentes
-      </div>
+      <div class="basicrow f-title">Portal Agentes</div>
 
       <div class="basicrow m-top">
         <div class="row">
           <div class="col-md-5 col-lg-7 hidden-xs hidden-sm text-center">
-            <img width="100%" class="neg-img" src="../../assets/images/portalagentes-stock.jpg">
+            <img width="100%" class="neg-img" src="../../assets/images/portalagentes-stock.jpg" />
           </div>
 
           <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5">
             <form class="logside" [formGroup]="loginForm">
               <div class="basicrow f-bigmed roboto-m">
-                <img width="100%" class="mc-icon" src="../../assets/images/miclaro-icon.png"> Administraci&oacute;n Agentes
+                <img width="100%" class="mc-icon" src="../../assets/images/miclaro-icon.png" /> Administraci&oacute;n
+                Agentes
               </div>
 
               <div class="basicrow m-top">
@@ -38,7 +37,7 @@
                 <label class="label-f">Contrase&ntilde;a</label>
 
                 <div class="basicrow">
-                  <input class="inp-f" formControlName="password" type="password"/>
+                  <input class="inp-f" formControlName="password" type="password" />
                   <small
                     [hidden]="loginForm.controls.password.valid || loginForm.controls.password.untouched"
                     class="text-danger"
@@ -77,11 +76,13 @@
   <div class="log-gbg visible-lg">
     <div class="container">
       <div class="basicrow f-bigmed roboto-l">
-        <span class="roboto-r f-big">&#191;Qu&eacute; es Portal Agentes&#63;</span><br/>
-        Es el canal para agentes autorizados de Claro para todas sus gestiones de activaciones de l&iacute;neas Prepago y Pospago. Adicionalmente visualizaci&oacute;n de boletines y modulos de ordenes de compra de equipos y SIM Cards.
+        <span class="roboto-r f-big">&#191;Qu&eacute; es Portal Agentes&#63;</span><br />
+        Es el canal para agentes autorizados de Claro para todas sus gestiones de activaciones de l&iacute;neas Prepago
+        y Pospago. Adicionalmente visualizaci&oacute;n de boletines y modulos de ordenes de compra de equipos y SIM
+        Cards.
       </div>
     </div>
   </div>
 
-  <app-footer></app-footer>
+  <app-footer style="position: static;bottom: 0;"></app-footer>
 </div>
